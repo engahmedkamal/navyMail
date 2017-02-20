@@ -1,0 +1,64 @@
+
+<script type="text/javascript" src="tarbet_form.js" > </script>
+
+
+<div id="modal-form"  class="modal fade in" style="display: none;">
+
+	<div class="modal-dialog" style="width:780px">
+		<div class="modal-content">
+	
+			<div class="modal-header">
+			
+				<button class="btn btn-sm" data-dismiss="modal" >x</button>
+				<form  class="form-search" id="tarbet_form">
+					<div class="row col-md-offset-3 col-md-9">
+					
+							<span class="col-md-3 input-group-btn">
+								<button type="submit" id="btnSearch" class="btn btn-purple btn-sm">
+									<i class="icon-search icon-on-right bigger-110"> </i>
+								البحث
+								</button>
+							
+							</span>
+							
+							<div class="col-md-9" class="input-group">
+								<input class="col-md-5" type="text" id="docOutNumber"   placeholder="رقم صادر الجهة"  tabindex="2"/>
+								<input class="col-md-3" autofocus type="text" id="docNumber"   placeholder="رقم الوارد"  tabindex="1"/>
+							</div>
+							
+					</div>
+				</form>
+			
+			</div>
+		
+			<div class="modal-body overflow-visable">
+				<div class="row">
+					<table id="docsTbl" class="table table-hover table-stripped table-bordered">
+						<thead>
+							<tr>
+								<th style="text-align: center;">رقم المكاتبة</th>
+								<th style="text-align: center;">الموضوع</th>
+								<th style="text-align: center;">تاريخ الوارد</th>
+								<th style="text-align: center;">رقم صادر الجهة</th>
+								<th style="text-align: center;">الموقف</th>
+								<th style="text-align: center;"></th>
+							</tr>
+
+						</thead>
+					
+						<tbody id="inner-modal-content">
+						
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="modal-footer">
+					<button id="close_modal" class="btn btn-sm" data-dismiss="modal">
+						<i class="icon-remove"></i>
+						إلغاء
+					</button>				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

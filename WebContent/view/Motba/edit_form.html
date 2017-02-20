@@ -1,0 +1,81 @@
+<script type="text/javascript" src="Motba/edit_form.js"></script> 
+<div class="col-md-6">
+<div class="panel-body">
+<table class="table table-hover table-stripped table-bordered"  id = "istagel_table" style="width:100%; color: black;">
+			<thead>
+				<tr>
+					<th style="text-align: center; background-color:white; color: black;">حذف</th>
+					<th style="text-align: center; background-color:white; color: black;"> تاريخ الإستعجال</th>
+				</tr>
+			</thead>
+			<tbody id="table_content">
+			</tbody>
+		</table>
+		</div>
+</div>
+<div class="col-md-6">
+	<div class="row">
+		<label style="color: red;">جهات المتابعة و الرد </label> <select
+			id="units" class="form-control">
+		</select> <br> <label style='color: red;'>تم الرد</label><br>
+			<select class='form-control' id='state'></select> <br />
+			<div id="date"><br></div>
+			<br><br>
+			<button style="visibility: visible;" id="send" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#myModal"
+			type="button" >
+			<i class="icon-ok bigger-110"></i>أستعجال
+		    </button> 
+	</div>
+
+	 <!--  <div class="row" id="Sader_units"></div>  DATEDATE-->
+	<br>
+	
+	<div class="row">
+		<textarea rows="2" class="input-lg form-control" maxlength="100"
+			id="notes" placeholder="ملاحظات"></textarea>
+	</div>
+	
+	<br>
+
+<label style='color: red;'>تم المتابعة</label><br>
+			<select class='form-control' id='answer'></select> <br />
+			<br>
+ 	<div class="row col-md-offset-5 col-md-1">
+	  	<button style="visibility: visible;" id="editDoc" class="btn btn-info"
+			type="button" onclick="save_edited_document()">
+			<i class="icon-ok bigger-110"></i>حفظ
+		</button> 
+		
+	<br>
+		
+	</div>
+
+	    
+
+	<div class="row col-md-offset-5 col-md-1">
+		<button style="visibility: visible;"  class="btn btn-info"
+			type="button" onclick="goback()">
+			<i class="icon-reply icon-only"></i>رجوع
+		</button>
+	</div>
+	<br>
+</div>
+<div id="istagel_panel">
+</div>
+   <!-- Modal 
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">تاريخ أخر استعجال </h4>
+                </div>
+                <div class="row" id="Sader_units" ></div> 
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">الــغـــاء</button>
+                    <button type="button" class="btn btn-primary" onclick="saveTextBoxes()" data-dismiss="modal" > ارســـال </button>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.modal -->

@@ -1,0 +1,42 @@
+
+<script type="text/javascript" src="Motba/waredEditform.js"> </script>
+<div class="col-md-6">
+</div>
+<div class="col-md-6">
+	<div class="row">
+		<div class="col-md-3">
+			<select class="form-control" id="trans_year"></select>
+		</div>
+		<div class="col-md-4">
+			<select class="form-control" id="trans_month"></select>
+		</div>
+		<div class="col-md-2">
+			<select class="form-control"  id="trans_day"></select>
+		</div>
+		
+		<input class="col-md-3 " step="1" type="number" id="trans_number" placeholder="رقم الصادر المحول" value="" min="1" />
+	</div>
+	<br>
+	<label style="color: red;">تأشيرة السيد القائد</label>
+	<div class="row">
+			
+			<select class="form-control chosen_tashira" id="motb3aQuad" multiple="multiple"  style="text-align: center;"> </select>
+	</div>
+	<br>
+	<label style="color: green;">تأشيرة السيد رئيس الأركان</label>
+	<div class="row">
+			
+			<select class="form-control chosen_tashira" id="motb3a" multiple="multiple"  style="text-align: center;"> </select>
+	</div>
+	<br>
+	<label style="color: white;">جهات المتابعة و الرد </label>
+	<div class="row">
+			<select class="form-control chosen_tashira" id="Sader_units" multiple="multiple"  style="text-align: center;"> </select>
+	</div>
+	<br>
+	<div class="row col-md-offset-5 col-md-1">
+	<button style="visibility: visible;" id="editDoc" class ="btn btn-info" type="button" onclick ="save_edited_document()">
+	<i class="icon-ok bigger-110"></i>حفظ</button>
+	</div>
+		
+</div>

@@ -1,0 +1,85 @@
+<script type="text/javascript" src="Motba/search_form.js"> </script>
+
+<form action="" class="form-horizontal" role="form" id="details_search_form">
+	<div class="row col-md-12">
+
+		<div class="row col-md-12">
+			<div class="col-md-3"></div>
+			<div class="col-md-3 input-group">
+				<input  type="text" id="number_input"  placeholder="" value='' />
+			</div>
+			<div class="col-md-3">
+				<select  class="form-control" id="number_val" >
+					<option value="1"> رقم الوارد</option>
+					<option value="2"> رقم صادر الجهة</option>
+					<option value="3">رقم الصادر المحول </option>
+				</select>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		
+		
+		<br>
+		<br>
+		<br>
+		
+		
+		<div class="row col-md-12">
+			
+			<div class="col-md-5 input-group">
+				<input class="form-control date-picker" id="date-to" type="text" data-date-format="dd-mm-yyyy" value=''  placeholder ="إلى الفترة" />
+				<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+			</div>
+			<div class="col-md-2"></div>
+	
+			<div class="col-md-5 input-group">
+				<input class="form-control date-picker" id="date-from" type="text" data-date-format="dd-mm-yyyy" value=''  placeholder="من الفترة" />
+				<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+			</div>
+			
+		</div>
+		
+		<br>
+		<br>
+		<br>
+		
+		<div class="row col-md-12">
+			<div class="col-md-4">
+				<select class="form-control"  id="status" name="status">
+				</select>
+			</div>
+			<div class="col-md-4">
+				<select class="form-control"  id="target" name="target">
+				</select>
+			</div>
+			<div class="col-md-4">
+				<select class="form-control chosen"  id="units" name="doc_type">
+				</select>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+		
+		<div class="row">
+			<center class="col-md-12">
+				<textarea rows ="3" class = " input-lg form-control"  id="document_title" placeholder="الموضوع"
+				  style=" width: 70%;" ></textarea>
+    		</center>
+		</div>
+		
+		<br>
+		<br>
+		
+		<div class="row">
+			<center class="col-md-12">
+				<button class="btn btn-purple">
+					<i class="icon-search"></i><b>البحــــــــــــــــــــــث</b>
+				</button>
+				<a class="btn btn-info" onclick="refresh()"> <i class="icon-undo bigger-110"></i><b>بحــث جـديـــــــد</b> </a>
+			</center>
+
+		</div>
+	</div>
+</form>

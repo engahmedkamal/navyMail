@@ -1,0 +1,98 @@
+<script type="text/javascript" src="Travels/Details.js"> </script> 
+
+<div class="row col-lg-12" id="">
+<div class="panel panel-default">
+	<div class="panel-body">
+
+		<table class="table table-hover table-stripped table-bordered" id = "" style="width:100%; color: black;">
+			<tbody>
+				<tr style=" text-align: center; "  >
+					<th style=" text-align: center; "  style=" text-align: center; "  >نوع المأمورية </th>
+					<td id="ma2morya_type"></td>
+				</tr>
+		
+				<tr style="text-align: center; ">
+					<th style=" text-align: center; " >نوع النشاط</th>
+					<td id="nashat_type"></td>
+				</tr>
+						
+				<tr style="text-align: center; ">
+					<th style=" text-align: center; " >اسم النشاط </th>
+					<td id="nashat_name"></td>
+				</tr>
+		
+				<tr style="text-align: center;"  >
+					<th style=" text-align: center; " >من الفترة</th>
+					<td id="date_from"></td>
+				</tr>
+		
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >إلى الفترة </th>
+					<td id="date_to"></td>
+				</tr>
+		
+		
+				<tr style="text-align: center;"  >
+					<th style=" text-align: center; " >رقم التصديق </th>
+					<td id="confirmation_no"></td>
+				</tr>
+		
+				<tr style="white-space: nowrap; text-align: center; ">
+					<th style=" text-align: center; " >تاريخ التصديق</th>
+					<td id="confirmation_date"></td>
+				</tr>
+		
+				<tr style="text-align: center;"  >
+					<th style=" text-align: center; " >قائد المأمورية / قائد التشكيل </th>
+					<td id="ma2morya_commander"></td>
+				</tr>
+		
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >رئيس أركان التشكيل </th>
+					<td id="ma2morya_second_commander"></td>
+				</tr>
+		
+		
+				<tr style="text-align: center;"  >
+					<th style=" text-align: center; " >الوحدات البحرية المسافرة</th>
+					<td id="ma2morya_ships"></td>
+				</tr>
+		
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >موانى الزيارة</th>
+					<td id="ma2morya_ports"></td>
+				</tr>
+		
+				<tr  style="text-align: center;"  >
+					<th style=" text-align: center; " >تربيط على </th>
+					<td id="ma2morya_related_doc"></td>
+				</tr>
+
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="row col-lg-12">
+	<div class="row col-lg-12">
+		<div class="col-lg-2"></div>
+		<div class="col-lg-4">
+			<select id="ship_type" class="form-control"></select>
+		</div>
+		<div class="col-lg-4">
+			<p style="font-size:20px;color:white;text-align:center;"><strong>عرض طاقم المسافرين على:</strong></p>
+		</div>
+		<div class="col-lg-2"></div>
+	</div>
+	<br>
+	
+	
+	<br>
+	<div class="row col-lg-12">	 
+		<a onclick="ShowOfficersForm()" class=" btn btn-danger btn-md btn-block" target="_blank" href="javascript:void(0)"><strong style="width:10px;font-size:20px;">عرض طاقم الضباط الـــــمسافرين</strong> </a>
+		<a onclick="ShowAssistantsForm()" class="btn btn-success btn-md btn-block" target="_blank" href="javascript:void(0)"><strong style="width:10px;font-size:20px;">عرض طاقم صف الضباط الــــمسافرين</strong> </a>
+		<a onclick="ShowStudentsForm()" id="ShowStudentsForm"  class="btn btn-primary btn-md btn-block" target="_blank" href="javascript:void(0)"><strong style="width:10px;font-size:20px;display:inline">عرض طاقم الــــــطلاب الـــــمسافرين</strong> </a>
+	</div>
+</div>
+
+</div>

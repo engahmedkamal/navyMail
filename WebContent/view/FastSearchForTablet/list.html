@@ -1,0 +1,58 @@
+
+<script type="text/javascript" src="FastSearchForTablet/list.js"></script>
+<div class="row col-lg-12">
+</div>
+<div class="panel panel-default">
+			<div class="raw">
+		         <p id="MAINTITLE" style="font-size:30px;color:green;text-align:center;">
+		        		<strong id="title"></strong>
+		         </p>
+	         	<div class='col-md-3'>
+					<label> عرض 
+					<select id="pageSize" size="1" name="underPrepare_length" aria-controls="underPrepare">
+					</select> 
+					نتيجة</label>
+				</div>
+	         </div>
+	
+	<div class="panel-body">
+		<table class="table table-hover table-stripped table-bordered" id = "documents_table" style="width:100%; color: black;">
+			<thead>
+				<tr>
+					<th class="center"><label class="inline">
+						<input id="id-toggle-all" type="checkbox" class="ace">
+						<span class="lbl"></span></label></th> 
+					<th style="text-align: center;">رقم الوارد</th>
+					<th style="width:250px;text-align: center;">الموضوع</th>
+					<th style="text-align: center;">رقم صادر الجهة</th>
+					<th style="text-align: center;">  </th>
+					<th style="white-space: nowrap; text-align: center; ">التاريخ</th>
+					<th style="text-align: center;">الموقف</th>
+					<th style="width:250px;text-align: center;">أصل الموضوع</th>
+					<th style="width:100px;text-align: center;">عرض الموضوع</th>
+				</tr>
+			</thead>
+			<tbody id="table_content">
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<nav class ="row">
+	<div class ="col-md-2">	             
+		<button id="toshown" class ="btn btn-info" type="button" >
+		<i class="icon-ok bigger-110"></i>
+تحويل	
+		</button>
+	</div>	     
+	<div class="col-md-2">
+		<select class="form-control" id="status" placeholder="- الموقف -"> </select>
+	</div>
+	<div class="col-md-3">
+		<select class="form-control" id="target" placeholder="-- عرض علي --"> </select>
+	</div>
+	<div class="col-md-5">
+	  <ul class="pagination" id ="paging">
+	  </ul>
+	</div>
+</nav>

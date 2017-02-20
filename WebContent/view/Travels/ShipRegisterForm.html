@@ -1,0 +1,50 @@
+<script type="text/javascript" src="Travels/ShipRegisterForm.js"></script>
+<form action="" class="form-horizontal" role="form">
+<div class="btn btn-primary row col-md-offset-12 col-md-1" onclick="goBack()">
+		<a href="javascript:void(0);" style="color: white;font-size: 20px;">رجوع</a>
+		<i class="icon-reply icon-only"></i>
+	</div>
+	<div class="row col-lg-12">
+		<p style="font-size:30px;color:white;text-align:center;"><strong>تســجيل الوحــدات المشـاركة</strong></p>
+	</div>
+	<!-- Panel Register Form-->
+	<div class="row col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+		    </div>  
+             <div class="panel-body">
+                 <div class="dataTable_wrapper">
+                    <table class="table table-stripped table-bordered table-hover">
+                      <thead>
+                         <tr>
+                         <th style="width:5px;font-size:18px;color:black;text-align:center;">م</th>
+                         <th style="width:20px;font-size:18px;color:black;text-align:center;">إسم الوحدة</th>
+                         <th style="width:15px;font-size:18px;color:black;text-align:center;">نوع الطراز</th>
+                         <th style="width:20px;font-size:18px;color:black;text-align:center;">الوحدة البحرية</th>
+                         </tr>
+                      </thead>
+                      <tbody id="ships_table_content">
+                      </tbody>
+                    </table>
+                 </div>
+			</div>
+	 	</div>
+	 </div>
+	 	 	<div id="add_new_ship" class="row col-lg-12">
+	 	 	 <div class="col-lg-3">
+			 	<a onclick="insert_new_ship()" class="btn btn-sm btn-info btn-block" target="_blank" href="javascript:void(0)"><strong style="width:10px;font-size:20px;">حفظ </strong> </a>
+			 </div>
+			 <div class="col-lg-3">
+		         <select id="ships_options" class="form-control"></select> 
+	         </div>         
+	         <div class="col-lg-2">
+	         	<input id="ship_type" class="form-control" placeholder="نوع الطراز">
+	         </div>   
+	         <div class="col-lg-2"> 	
+	         	<input id="ship_name" class="form-control" placeholder="اسم الوحدة">
+		 	 </div>
+	         <div class="col-lg-2">
+	         	<p style="font-size:20px;color:white;text-align:right;"><strong>تسجيل وحدة </strong></p>
+			 </div>			 
+		</div>
+</form>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html dir="rtl">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<META HTTP-EQUIV="CONTENT-LANGUAGE" CONTENT="ar">
+	<!-- <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE"> -->
+	<meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+	<link rel="shortcut icon" href="../assets/images/favicon.png" />
+	<title>سكرتارية القوات البحرية</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="../assets/css/ace.min.css"/>
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="../assets/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../assets/css/fullcalendar.css" />
+	<link rel="stylesheet" href="../assets/css/colorbox.css" />
+	<link rel="stylesheet" href="../assets/css/ace-fonts.css" />
+	<link rel="stylesheet" href="../assets/css/ace-rtl.min.css" />
+	<link rel="stylesheet" href="../assets/css/ace-skins.min.css" />
+	<link rel="stylesheet" href="../assets/css/lightbox.css" />
+	<link rel="stylesheet" href="../assets/css/datepicker.css" />
+	<link rel="stylesheet" href="../assets/css/daterangepicker.css" />
+	<link rel="stylesheet" href="../assets/css/default.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../assets/css/jquery.sidr.dark.css" type="text/css" media="all" />
+	<!-- JS -->
+	
+	<script src="../assets/js/jquery-2.0.3.min.js?body=1" type="text/javascript"></script>
+	<script src="../assets/js/jquery.sidr.min.js" type="text/javascript"></script>
+	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../assets/js/jquery-ui-1.10.3.full.min.js" type="text/javascript"></script>
+	<script src="../assets/js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+	<script src="../assets/js/chosen.jquery.min.js" type="text/javascript"></script>
+	<script src="../assets/js/ace-extra.min.js" type="text/javascript"></script>
+	
+	<script type="text/javascript" src="../assets/js/jquery.gritter.min.js"></script>
+	<script type="text/javascript" src="../assets/js/lightbox-2.6.min.js"></script>
+	<script src="../assets/js/date-time/bootstrap-datepicker.min.js" type="text/javascript"></script>
+	<script src="../assets/js/date-time/bootstrap-timepicker.min.js" type="text/javascript"></script>
+	<script src="../assets/js/date-time/moment.min.js" type="text/javascript"></script>
+	<script src="../assets/js/date-time/daterangepicker.min.js" type="text/javascript"></script>
+	<script src="../assets/js/ace.min.js" type="text/javascript"></script>
+	<script src="../assets/js/ace-elements.min.js" type="text/javascript"></script>
+	<script src="../assets/js/jqBootstrapValidation.js" type="text/javascript"></script>
+	<script type="text/javascript" src="index2.js">	</script>
+	  <script src="../assets/js/main.js" type="text/javascript">	</script>	
+	<script src="../assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
+	<script src="../assets/js/jquery.dataTables.bootstrap.js" type="text/javascript"></script>
+	<!-- for chosen-->
+	<script src="../assets/js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+	<script src="../assets/js/chosen.jquery.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="../assets/css/chosen.css" />	
+</head>
+<body>
+ <br />
+ <br />
+ <br />
+ <br />
+		 	<div id="wrapper">
+			<div id="menu-wrapper">
+	
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+     <!--   <li class="dropdown" style="background: rgb(220, 220, 250)">
+          <a  style="font-size: 18px;" href="javascript:void(0);" onclick="go_to_eltezmat_register()" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>تسجيل الألتزام</strong><span class="caret"></span></a>
+          </li>
+          -->
+        <li  class="dropdown" style="background:rgb(50, 118, 177);">
+          <a   style="font-size: 18px;color:white;" href="javascript:void(0);" onclick="GoMissionsForm()" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><strong>مـنظومة السفر</strong><span class="caret"></span></a>
+      </li>
+      <li class="dropdown" style="background:rgb(210, 50, 45);">
+          <a  style="font-size: 18px; color:white;   class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" aria-expanded="false"><strong>مـنظومة المتابعة</strong><span class="caret"></span></a>
+          <ul class="dropdown-menu">
+					<li><a tabindex="-1" href="javascript:void(0);" onclick="Motb3a_Search_Form()">بحث</a></li>
+				  	<li><a tabindex="-1" href="javascript:void(0);" onclick="Print_Form();">طبــاعـة</a></li>
+				   <li><a tabindex="-1" href="javascript:void(0);" onclick="Print_Form_units();">طبــاعـة تقرير الوحدات</a></li> 
+			    </ul>
+      </li>
+      <li class="dropdown"  style="background:rgb(92, 184, 92);" >
+          <a  style="font-size: 18px; color:white;  class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" aria-expanded="false"><strong>مـنظومة الصادر</strong><span class="caret"></span></a>
+           <ul class="dropdown-menu">
+					<li><a tabindex="-1" href="javascript:void(0);" onclick="open_sader_form()">بحث</a></li>
+				  	<li><a tabindex="-1" href="javascript:void(0);" onclick="open_create_sader_form();">مكاتبة جديدة</a></li> 
+			    </ul>
+      </li>
+      <li class="dropdown" style="background:rgb(92, 184, 92);">
+          <a  style="font-size: 18px; color:white;" href="javascript:void(0);" onclick="open_wared_form()" class="dropdown-toggle"  data-toggle="dropdown" role="button"  aria-expanded="false"><strong>مـنظومة الوارد</strong><span class="caret"></span></a>
+      </li>
+      </ul>
+</div>
+ <!--  -->
+
+  <div class="container-fluid">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" >
+     
+    </div>
+  </div>
+</nav>
+</div>
+<div id="page">
+
+	<div class="bgcontent">
+		<div class="row col-lg-12">
+	<p style="font-size:25px;color:gray;text-align:center;background:rgb(0, 255, 153);" id=""><strong>منظومة سكــرتارية قيـــادة القـــوات البحـريــة</strong></p>
+	<br>
+	<div class="col-lg-5">
+		<a id="" class="btn btn-success btn-lg btn-block" onclick="open_sader_form()" target="_blank"><strong>منظومة الصــادر</strong></a>
+	</div>
+	
+	<div class="col-lg-2">
+	
+	</div>
+	
+	<div class="col-lg-5" id="ahmed">
+		<a class="btn btn-success btn-lg btn-block" onclick="open_wared_form()" target="_blank"><strong>منظومة الـوارد</strong></a>
+	</div>
+</div>
+
+
+<br>
+<div class="space-35"></div>
+<div class="space-100"></div>
+<div class="row col-lg-12">
+	<br>
+	<div class="col-lg-5">
+		<a id="" class="btn btn-primary btn-lg btn-block" onclick="GoMissionsForm()" target="_blank"><strong>منظومة الســفـــر</strong></a>
+	</div>
+	
+	<div class="col-lg-2">
+	
+	</div>
+	
+	<div class="col-lg-5">
+		<a class="btn btn-danger btn-lg btn-block" onclick="Motb3a_Search_Form()" target="_blank"><strong>منظومة المتــابعة</strong></a>
+	</div>
+</div>
+
+	</div>
+	<div class="bgbtm"></div>
+</div>
+ <div class="left-loggin-btn" id="simple-menu">
+	<img id="left-btn-img" alt="" />
+	<span style="color: white;" >تسجيل الخروج</span>
+
+</div>
+			 
+	
+</div>
+	<br />
+	<br />
+	<br />
+	
+	<div id="footer">
+		<p style="font-size: 25px; color: red;">©سكــــــرتارية قيــــــادة القــــــوات البحــــــرية</p>
+	</div>
+</body>
+</html>

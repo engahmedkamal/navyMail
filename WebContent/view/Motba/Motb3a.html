@@ -1,0 +1,63 @@
+<script type="text/javascript" src="Motba/Motb3a.js"> </script>
+
+	<div class="row col-md-12">
+		<div class="row col-md-12">
+			
+			<div class="col-md-5 input-group">
+				<input class="form-control date-picker" id="date-to" type="text" data-date-format="dd-mm-yyyy" value=''  placeholder ="إلى الفترة" />
+				<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+			</div>
+			<div class="col-md-2"></div>
+	
+			<div class="col-md-5 input-group">
+				<input class="form-control date-picker" id="date-from" type="text" data-date-format="dd-mm-yyyy" value=''  placeholder="من الفترة" />
+				<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+			</div>
+			
+		</div>
+		<br>
+		<br>
+		<br/>
+		<div class="row">
+			<center class="col-md-12">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<select class="form-control chosen"  id="units" name="doc_type">
+				</select>
+			</div>
+			</center>
+			</div>
+			<br/>
+			<div class="row">
+			<center class="col-md-12">
+			<div class="col-md-4"></div>
+			
+			<div class="col-md-4">
+				<select class="form-control chosen"  id="type" >
+				<option value="3">---  نوع التقرير   ---</option>
+				 <option value="3">قائد و رئيس أركان القوات البحرية</option>
+				 <option value="2">رئيس أركان القوات البحرية </option>
+				 <option value="1"> قائد القوات البحرية</option>
+				</select>
+			</div>
+			</center>
+			</div>
+			<br/><br/>
+		<div class="row">
+			<center class="col-md-12">
+				<button class="btn btn-purple btn-lg" onclick="print(1)">
+					<i class="icon-print"></i><b>طــــبـــــــاعـــــــة</b>
+				</button>
+				<br/><br/><br/>
+			
+				<button class="btn btn-primary btn-lg" onclick="print(3)">
+					<i class="icon-print"></i><b> طـــبـــاعة  تقرير اسـبـوعــي</b>
+				</button>
+		           				
+				<button class="btn btn-success btn-lg" onclick="print(2)">
+				<i class="icon-print"></i><b> طـــبـــاعة تقرير شـــهـــرى</b>
+				</button>
+			</center>
+
+		</div>
+	</div>

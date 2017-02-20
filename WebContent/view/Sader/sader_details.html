@@ -1,0 +1,129 @@
+<script type="text/javascript" src="Sader/sader_details.js"></script>
+
+<div class='btn btn-primary row col-md-offset-12 col-md-1'
+	onclick="goback()">
+	<a href="javascript:void(0);" style="color: white; font-size: 20px;">رجوع</a>
+	<i class="icon-reply icon-only"></i>
+</div>
+<br>
+<div class="row col-md-12" id="doc_details_temp">
+
+	<div id="document-images" class="col-md-4"></div>
+
+	<div class="col-md-1"></div>
+
+	<div id="test" class="col-md-7">
+
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+
+				<table class="table table-hover table-stripped table-bordered"
+					id="documents_table" style="width: 100%; color: black;">
+					<tbody>
+						<tr style="text-align: center;">
+							<th style="text-align: center;">درجة السرية</th>
+							<td id="security_id"></td>
+						</tr>
+						<tr style="text-align: center;">
+							<th style="text-align: center;" >الموضوع</th>
+							<td id="title"></td>
+						</tr>
+
+						<tr style="text-align: center;">
+							<th style="text-align: center;">رقم الصادر</th>
+							<td id="doc_number"></td>
+						</tr>
+
+						<tr style="text-align: center;">
+							<th style="text-align: center;">تاريخ الصادر</th>
+							<td id="doc_date"></td>
+						</tr>
+
+
+						<tr style="text-align: center;">
+							<th style="text-align: center;">الجهة</th>
+							<td id="unit_id"></td>
+						</tr>
+						
+						<tr style="text-align: center;">
+							<th style="text-align: center;">الوحدات</th>
+							<td id="doc_type"></td>
+						</tr>
+
+						<tr style="text-align: center;">
+							<th style="text-align: center;">ملف الحفظ</th>
+							<td id="file_save_number"></td>
+						</tr>
+
+						<tr style="text-align: center;">
+							<th style="text-align: center;">كود الملف الفرعى</th>
+							<td id="sub_file_save_number"></td>
+						</tr>
+						<tr style="text-align: center;">
+							<th style="text-align: center;">التأشيرة</th>
+							<td id="target_id"></td>
+						</tr>
+
+						<tr style="text-align: center;">
+							<th style="text-align: center;">التوقيع</th>
+							<td id="tashira"></td>
+						</tr>
+						<!-- 
+						 
+						<tr style="text-align: center;">
+							<th style="text-align: center;">تاريخ المتابعة</th>
+							<td id="start_date"></td>
+						</tr>
+						<tr style="text-align: center;">
+							<th style="text-align: center;">تاريخ المتابعة المتغير</th>
+							<td id="finish_date"></td>
+						</tr>
+						-->
+						<tr style="text-align: center;">
+							<th style="text-align: center;">تربيط</th>
+							<td id="parents"></td>
+						</tr>
+
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+
+				<table class="table table-hover table-stripped table-bordered"
+					id="units_table" style="width: 100%; color: black;">
+					<thead>
+                         <tr>
+                         <th style="width:5px;font-size:18px;color:black;text-align:center;">اسم الجهة</th>
+                         </tr>
+                      </thead>
+					<tbody id="units_body">
+						
+					</tbody>
+
+				</table>
+				</div>
+				</div>
+
+		<div>
+			<br>
+
+			<div class="col-md-3"></div>
+
+			<button class="btn btn-light btnPrint col-md-4" onclick="print();">
+				<i class="icon-print bigger-160"></i> طباعة
+			</button>
+
+			<div class="col-md-1"></div>
+
+			<button class="btn btn-info btnPrint col-md-4" onclick="edit();">
+				<i class="icon-edit"></i> تعديل
+			</button>
+
+		</div>
+
+	</div>
+</div>

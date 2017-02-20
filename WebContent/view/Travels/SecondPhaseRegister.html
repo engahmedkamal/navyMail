@@ -1,0 +1,210 @@
+<script type="text/javascript" src="Travels/SecondPhaseRegister.js"> </script> 
+<script type="text/javascript" src="../view/tarbet_form.js"> </script>
+
+<div class="btn btn-primary row col-md-offset-12 col-md-1" onclick="goBack()">
+		<a href="javascript:void(0);" style="color: white;font-size: 20px;">رجوع</a>
+		<i class="icon-reply icon-only"></i>
+</div>
+
+<form action="" class="form-horizontal" role="form">
+	<div class="row col-lg-12">
+
+<div  class="row col-lg-12">
+<p id="Ma2morya_name" style="font-size:20px;color:white;text-align:center;"><strong>عنوان المــأمورية</strong></p>
+</div>
+
+<div class="space-40"></div>
+<br> 
+
+<div class="row col-lg-12">
+
+	<div class="col-lg-5 input-group">
+	<input class="form-control date-picker" id="travel_date-to" type="text" data-date-format="dd-mm-yyyy" value=''  placeholder ="إلى الفترة" />
+	<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+	</div>
+	
+	<div class="col-lg-2"> </div>
+		
+	<div class="col-lg-5 input-group">
+	<input class="form-control date-picker" id="travel_date-from" type="text" data-date-format="dd-mm-yyyy" value=''  placeholder="من الفترة" />
+	<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+	</div>	
+    
+</div>
+
+<div class="space-40"></div>
+<br> 
+
+<div class="row col-lg-12">
+<div class="col-lg-4 input-group">
+<input class="form-control date-picker" id="tasdeq_date" type="text" data-date-format="dd-mm-yyyy" value=''  placeholder ="تاريخ التصديق" />
+<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+</div>
+		
+<div  class="col-lg-4"> 
+<input id="tasdeq_number" class=form-control placeholder="رقم التصديق">
+</div>
+	 	  	 
+<div class="col-lg-4">
+<button style="visibility: visible" id="wared_tarbet" class ="btn btn-block btn-success" type="submit" data-toggle="modal" data-target="#modal-form" onclick="open_modal_form()">
+<i class="icon-plus"></i>المكاتبة الواردة</button>
+</div>
+</div>
+
+<div class="space-40"></div>
+<br> 
+
+<div class="row col-lg-12">
+<div id="doc_follow"></div>
+</div>
+
+<div class="space-40"></div>
+<br> 
+
+<div id="travel_qa2ed_re7la" class="row col-lg-12" style="display: none;">
+
+		 <div class="col-lg-2">
+         <select id="travel_qa2ed_ship" class="form-control">
+         </select> 
+         </div>
+		
+		 <div class="col-lg-2">
+         <select id="travel_qa2ed_unit" class="form-control">
+         </select> 
+         </div>
+         
+         <div class="col-lg-2"> 
+        	<input id="travel_qa2ed_name" class="form-control" placeholder="الإســــــــــم">
+	 	 </div>
+	 	 
+         <div   class="col-lg-2">
+         <select id="travel_qa2ed_rank" class="form-control">
+         </select> 
+         </div>
+         
+          <div class="col-lg-2"> 	
+         <input id="travel_qa2ed_ID" class="form-control" placeholder="الرقم العسكرى">
+	 	 </div>
+	 	 
+         
+         <div class="col-lg-2">
+         <p style="font-size:20px;color:white;text-align:center;"><strong>قــــائد المــأمورية</strong></p>
+		</div>
+		
+		<div class="space-40"></div>
+		<br>
+</div>
+
+
+
+<div id="travel_qa2ed_tashkeel" class="row col-lg-12" style="display: none;">
+		
+		 <div class="col-lg-2">
+         <select id="travel_qa2ed_tashkeel_ship" class="form-control">
+         </select> 
+         </div>
+		
+		
+		 <div class="col-lg-2">
+         <select id="travel_qa2ed_tashkeel_unit" class="form-control">
+         </select> 
+         </div>
+         
+         <div class="col-lg-2"> 
+        	<input id="travel_qa2ed_tashkeel_name" class="form-control" placeholder="الإســــــــــم">
+	 	 </div>
+	 	 
+         <div   class="col-lg-2">
+         <select id="travel_qa2ed_tashkeel_rank" class="form-control">
+         </select> 
+         </div>
+         
+         <div class="col-lg-2"> 	
+         <input id="travel_qa2ed_tashkeel_ID" class="form-control" placeholder="الرقم العسكرى">
+	 	 </div>
+	 	 
+         <div class="col-lg-2">
+         <p style="font-size:20px;color:white;text-align:center;"><strong>قــــائد التشكيل</strong></p>
+		</div>
+		
+		<div class="space-40"></div>
+		<br> 
+		
+</div>
+
+
+
+<div id="travel_ra2es_tashkeel" class="row col-lg-12" style="display: none;">
+		
+		 <div class="col-lg-2">
+         <select id="travel_ra2es_tashkeel_ship" class="form-control">
+         </select> 
+         </div>
+		
+		
+		 <div class="col-lg-2">
+         <select id="travel_ra2es_tashkeel_unit" class="form-control">
+         </select> 
+         </div>
+         
+         <div class="col-lg-2"> 
+        	<input id="travel_ra2es_tashkeel_name" class="form-control" placeholder="الإســــــــــم">
+	 	 </div>
+	 	 
+         <div class="col-lg-2">
+         <select id="travel_ra2es_tashkeel_rank" class="form-control">
+         </select> 
+         </div>
+         
+         <div class="col-lg-2"> 	
+         <input id="travel_ra2es_tashkeel_ID" class="form-control" placeholder="الرقم العسكرى">
+	 	 </div>
+	 	 
+         <div class="col-lg-2">
+         <p style="font-size:20px;color:white;text-align:center;"><strong>رئيس أركان التشكيل</strong></p>
+		</div>
+		
+		<div class="space-40"></div>
+		<br> 
+		
+</div>
+
+<div class="space-40"></div>
+<br>
+
+<div class="row col-lg-12">
+	<div class="col-lg-10">
+			<select class="form-control chosen" id="ships" multiple="multiple" style="text-align: center;"> </select>
+	</div>
+	<div class="col-lg-2">
+         <p style="font-size:20px;color:white;text-align:center;"><strong>الوحدات البحرية</strong></p>
+	</div>
+</div>
+
+<br>
+<div class="space-40"></div>
+
+<div class="row col-lg-12">
+	<div class="col-lg-10">
+			<select class="form-control chosen" id="ports" multiple="multiple" style="text-align: center;"> </select>
+	</div>
+	<div class="col-lg-2">
+         <p style="font-size:20px;color:white;text-align:center;"><strong>موانى الزيارة</strong></p></div>
+</div>
+
+<div class="space-40"></div>
+<div class="space-40"></div>
+<div class="space-40"></div>
+<br>
+
+
+<div class="row col-lg-12">
+  <br>
+  <a onclick="InsertMissionData()" class="btn btn-success btn-lg btn-block" target="_blank" href="javascript:void(0)"><strong style="width:10px;font-size:20px;">حفـــــــــــــــــــــــــــــــظ المأمورية</strong> </a>
+</div>
+
+</div>
+</form>
+
+<div id="tarbet_panel">
+</div>

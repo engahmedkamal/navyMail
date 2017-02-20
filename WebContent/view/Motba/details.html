@@ -1,0 +1,152 @@
+<script type="text/javascript" src="Motba/details.js"></script>
+
+<div class='btn btn-primary row col-md-offset-12 col-md-1' onclick="goback()">
+<a href="javascript:void(0);" style="color: white;font-size: 20px;">رجوع</a>
+<i class="icon-reply icon-only"></i>
+</div>
+<br>
+<div class="row col-md-12" id="doc_details_temp">
+
+<div id="document-images" class ="col-md-4"></div>
+
+<div class="col-md-1"></div>
+
+<div id="test" class="col-md-7">
+
+
+<div class="panel panel-default">
+	<div class="panel-body">
+
+		<table class="table table-hover table-stripped table-bordered" id = "documents_table" style="width:100%; color: black;">
+			<tbody>
+				<tr style=" text-align: center; "  >
+					<th style=" text-align: center; "  style=" text-align: center; "  >الموضوع</th>
+					<td id="title"></td>
+				</tr>
+		
+				<tr style="text-align: center; ">
+					<th style=" text-align: center; " >رقم الوارد</th>
+					<td id="doc_number"></td>
+				</tr>
+		
+				<tr style="text-align: center;"  >
+					<th style=" text-align: center; " >تاريخ الوارد</th>
+					<td id="created_at"></td>
+				</tr>
+		
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >رقم صادر الجهة</th>
+					<td id="doc_out_number"></td>
+				</tr>
+		
+				<tr style="text-align: center;"  >
+					<th style=" text-align: center; " >تاريخ صادر الجهة</th>
+					<td id="doc_out_date"></td>
+				</tr>
+		
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >الجهة الصادرة</th>
+					<td id="unit_id"></td>
+				</tr>
+		
+				<tr style="text-align: center;"  >
+					<th style=" text-align: center; " >رقم الصادر المحول</th>
+					<td id="trans_out_num"></td>
+				</tr>
+		
+				<tr style="white-space: nowrap; text-align: center; ">
+					<th style=" text-align: center; " >تاريخ الصادر المحول</th>
+					<td id="trans_out_date"></td>
+				</tr>
+		
+				<tr style="text-align: center;"  >
+					<th style=" text-align: center; " >الجهة</th>
+					<td id="doc_type"></td>
+				</tr>
+		
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >عرض على</th>
+					<td id="target_id"></td>
+				</tr>
+				
+				
+		
+				<tr style="text-align: center;"  >
+					<th style=" text-align: center; " >الموقف</th>
+					<td id="status_id"></td>
+				</tr>
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >تاشيرة السيد القائد</th>
+					<td id="tashira_quad"></td>
+				</tr>
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >تاشيرة السيد رئيس الأركان</th>
+					<td id="tashira"></td>
+				</tr>
+		
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >ملاحظات</th>
+					<td id="notes"></td>
+				</tr>
+				
+				<tr style="text-align: center;">
+					<th style=" text-align: center; " >المتابعة</th>
+					<td id="motb3a"></td>
+				</tr>
+				
+				<tr  style="text-align: center;"  >
+					<th style=" text-align: center; " >تربيط</th>
+					<td id="parents"></td>
+				</tr>
+		
+			</tbody>
+	
+		</table>
+		
+	</div>
+</div>
+<div class="panel panel-default">
+			<div class="panel-body">
+
+				<table class="table table-hover table-stripped table-bordered"
+					id="units_table" style="width: 100%; color: black;">
+					<thead>
+                         <tr>
+                         <th style="width:5px;font-size:18px;color:black;text-align:center;">تم الرد</th>
+                        
+						<span class="lbl"></span></label></th> 
+                         <th style="width:10px;font-size:18px;color:black;text-align:center;">جهات المتابعة و الرد</th>
+                         
+                         <th style="width:38%;font-size:18px;color:black;text-align:center;"  >الإستعجالات</th>
+                          <th style="width:20%;font-size:18px;color:black;text-align:center;"  >تاريخ الرد</th>
+                         </tr>
+                      </thead>
+					<tbody id="units_body">
+						
+					</tbody>
+
+				</table>
+				</div>
+				</div>
+
+<div>
+<br>
+
+<div class="col-md-3"></div>
+
+<button class="btn btn-light btnPrint col-md-4" onclick="print();">
+	<i class="icon-print bigger-160"></i>
+				طباعة
+</button>
+
+<div class="col-md-1"></div>
+
+<button class="btn btn-info btnPrint col-md-4" onclick="edit();">
+	<i class="icon-edit"></i>
+				تعديل
+</button>
+
+</div>
+
+</div>
+</div>

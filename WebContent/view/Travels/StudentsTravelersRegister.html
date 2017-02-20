@@ -1,0 +1,46 @@
+<script type="text/javascript" src="Travels/StudentsTravelersRegister.js"> </script> 
+<form action="" class="form-horizontal" role="form">
+
+	<div class="btn btn-primary row col-md-offset-12 col-md-1" onclick="goBack()">
+		<a href="javascript:void(0);" style="color: white;font-size: 20px;">رجوع</a>
+		<i class="icon-reply icon-only"></i>
+	</div> 
+	
+	<div class="row col-lg-12">
+		<p style="font-size:30px;color:white;text-align:center;"><strong>تسجيل بيانات الطاقم</strong></p>
+	</div>
+
+	<div class="row col-lg-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<!-- <input id="Passengers_Number" class="form-control" placeholder="عدد المسافرين في المأمورية"> -->
+					<p id="Ma2morya_name" style="font-size:20px;color:blue;text-align:center;"><strong>عنوان المــأمورية</strong></p>
+		    </div>
+		             
+		            
+             <div class="panel-body">
+                 <div class="dataTable_wrapper">
+                     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                         <thead>
+                             <tr>
+                             	 <th style="width:10px;font-size:18px;color:black;text-align:center;">حذف</th>
+                            	 <th style="width:10px;font-size:18px;color:black;text-align:center;">م</th>
+                            	 <th style="width:10px;font-size:18px;color:black;text-align:center;">الرقم العسكرى</th>
+                            	 <th style="width:10px;font-size:18px;color:black;text-align:center;">الرتبة</th>
+                            	 <th style="width:30px;font-size:18px;color:black;text-align:center;">الاسم</th>
+                            	 <th style="width:10px;font-size:18px;color:black;text-align:center;">ملاحظات</th>
+                              </tr>
+                         </thead>
+                         	<tbody id="Passengers_Body">
+                         </tbody>
+                     </table>
+                 </div>
+			</div>
+	 	</div>
+	 </div>
+	 	
+	<div class="row col-lg-12">
+  		<a onclick="print_travelers_report()" class="btn btn-primary btn-lg btn-block" target="_blank" href="javascript:void(0)"><strong>طبـــــــاعة</strong> </a>
+	</div>
+	
+</form>

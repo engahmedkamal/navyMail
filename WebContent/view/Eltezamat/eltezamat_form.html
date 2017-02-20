@@ -1,0 +1,55 @@
+<script type="text/javascript" src="Eltezamat/eltezamat_form.js"> </script> 
+<div class="row col-lg-12">
+	<div class="row col-lg-12">
+	         <p style="font-size:30px;color:white;text-align:center;"><strong id="eltezamName"></strong></p>
+	</div>
+	
+	<div class="row col-lg-12">
+		<div class="panel panel-default">
+	    	<div class="panel-heading">
+				<a id="editButton" onclick="AddNewEntry()" class="btn btn-danger btn-md btn-block" target="_blank" href="javascript:void(0)"><strong>تعديل الإلتزامات</strong> </a>
+	        </div>
+	             
+	        <div class="panel-body">
+                 <div class="dataTable_wrapper">
+                     <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                         <thead>
+                             <tr>
+                                 <th style="width:30px;font-size:18px;color:black;text-align:center;">م</th>
+                            	 <th style="width:120px;font-size:18px;color:black;text-align:center;">تاريخ الألتزام</th>
+                                 <th style="width:80px;font-size:18px;color:black;text-align:center;">توقيت الألتزام</th>
+                                 <th style="width:260px;font-size:18px;color:black;text-align:center;">الموضوع</th>
+                                 <th style="width:130px;font-size:18px;color:black;text-align:center;">المكان</th>
+                                 <th style="width:120px;font-size:18px;color:black;text-align:center;">رقم صادر الجهة</th>
+                                 <th style="width:130px;font-size:18px;color:black;text-align:center;">تاريخ صادر الجهة</th>
+                                 <th style="width:140px;font-size:18px;color:black;text-align:center;">الجهة</th>
+                             </tr>
+                         </thead>
+                         <tbody id="Officers_Body">
+                         </tbody>
+                     </table>
+                 </div>
+             </div>
+          
+         </div>
+    
+		<div class ="row">	             
+			<center>
+			<button id="eltezamsavebutton" class ="btn btn-info" type="button" onclick="saveLastRow()" style="visibility: hidden;">
+			<i class="icon-ok bigger-110"></i>
+			حفظ
+			</button>
+			</center>
+		</div>	             
+            
+
+		<div class ="row">	             
+			<center>
+			<button id="eltezamprintbutton" class ="btn btn-info" type="button" >
+			<i class="icon-ok bigger-110"></i>
+			طباعة
+			</button>
+			</center>
+		</div>	             
+ 	</div>
+ </div>

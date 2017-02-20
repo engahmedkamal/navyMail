@@ -1,0 +1,63 @@
+<script type="text/javascript" src="Sader/search_sader_form.js"> </script>
+
+<form action="" class="form-horizontal" role="form" id="details_search_form">
+		<div class="row col-md-12">
+			<div class="col-md-4 col-md-offset-4 input-group">
+				<input  type="text" id="number_input" class="input-lg form-control" placeholder="رقم الصادر" value='' />
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row col-md-12">
+			<div class="col-md-4 col-md-offset-1 input-group">
+					<input class="form-control date-picker" id="date-to" type="text" data-date-format="dd-mm-yyyy" value=''  placeholder ="إلى الفترة" />
+					<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+			</div>
+			<div class="col-md-2"></div>
+			<div class="col-md-4  input-group">
+				<input class="form-control date-picker" id="date-from" type="text" data-date-format="dd-mm-yyyy" value=''  placeholder="من الفترة" />
+				<span class="input-group-addon"> <i class="icon-calendar bigger-110"></i> </span>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row col-md-12">
+			<div class="col-md-4 col-md-offset-4 input-group">
+				<select tabindex="11" class="form-control chosen"  id="units" > </select>
+			</div>
+		</div>
+		<br>
+		<br>
+		<!-- 
+		<div class="row col-md-12">
+			<div class="col-md-4 col-md-offset-4 input-group">
+				<select tabindex="12" class="form-control" id="doctype" >
+					<option value ='-1' >الجهة</option> 
+					<option value ='2' >داخلى</option> 
+					<option value ='1'>خارجى</option> 
+					
+				</select>
+			</div>
+		<br>
+		<br>
+		</div>
+		 -->
+		
+		<div class="row">
+			<center class="col-md-12">
+				<textarea rows ="3" class = " input-lg form-control"  id="document_title" placeholder="الموضوع"
+						  style=" width: 70%;"></textarea>
+		   	</center>
+		</div>
+		<br>
+		<div class="row">
+			<center class="col-md-12">
+				<button class="btn btn-purple">
+					<i class="icon-search"></i><b>البحــــــــــــــــــــــث</b>
+				</button>
+				<a class="btn btn-info" href="javascript:void(0);" onclick="reload();"> <i class="icon-undo bigger-110"></i><b>بحــث جـديـــــــد</b> </a>
+			</center>
+
+		</div>
+</form>
